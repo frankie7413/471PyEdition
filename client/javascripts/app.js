@@ -11,6 +11,7 @@ var main = function () {
 		else{
 			page = $("#filtertext").val();
 			page = page.replace(/\s+/g, '') + '.html';
+			page = page.toLowerCase();
 			window.location = page;
 		}
 	});
