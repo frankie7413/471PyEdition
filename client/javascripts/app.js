@@ -9,7 +9,8 @@ var main = function () {
 			$("#filtertext").val('');
 		}
 		else{
-			page = $("#filtertext").val() + '.html';
+			page = $("#filtertext").val();
+			page = page.replace(/\s+/g, '') + '.html';
 			window.location = page;
 		}
 	});
